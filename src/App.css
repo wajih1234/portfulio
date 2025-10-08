@@ -1,38 +1,244 @@
-.App {
-  text-align: center;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 1px;
+
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:indigo;
+  margin-left: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #b0b0b0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color:indigo;
+}
+
+.toggle {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #00bfff;
+  
+
+}
+
+.dark-mode {
+  background-color: #030b1a;
+  color: #fff;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+  .about{
+    margin-top: 70px;
+    display: block;
+  justify-content: center;
+ margin-left: 600px;
+ width: 400px;
   }
+  .nice:hover {
+  color: red;                
+  transform: scale(1.2);     
+}
+.project {
+
+
+  text-align: center;
+  padding: 60px 20px;
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.project h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Each project card */
+.project-card {
+  position: relative;
+  background-color: #0b1a3a;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  height: 250px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.5);
+}
+
+/* Image */
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay appears on hover */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.project-card:hover .overlay {
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Text */
+.overlay h3 {
+  margin-bottom: 15px;
+  color: #00c8ff;
+  font-size: 1.3rem;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons a {
+  text-decoration: none;
+  background-color: #00c8ff;
+  color: #06142f;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.buttons a:hover {
+  background-color: #fff;
+  color: #06142f;
+}
+.ade {
+ 
+  text-align: center;
+  padding: 2rem;
+}
+
+.intern {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 45%;
+  color: #000000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ade .intern-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap; /* keeps it responsive on small screens */
+  gap: 1.5rem;
+}
+
+.title {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+.container56 {
+  display: flex;           
+  justify-content: center;  
+  align-items: flex-start;  
+  gap: 20px;                
+  flex-wrap: wrap;
+  margin-bottom: 20px;         
+}
+
+
+.acm1 {
+  position: relative;       
+  width: 300px;             
+  height: 200px;            
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+
+.acm1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.acm1:hover .overlay {
+  opacity: 1;
+color: #00c8ff;
+}
+.tit {
+  text-align: center;
+  margin-bottom: 20px; 
+}
+.footer {
+  
+   background-color:#f5f5f5 ;
+  color:#000000;
+  text-align: center;
+  padding: 20px 0;
+  text-align: center;        
+  padding: 20px 0;           
+  font-size: 0.9rem;          
+  position: relative;         
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2); 
+}
+
+
+.footer a {
+  color: #00c8ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
 }
