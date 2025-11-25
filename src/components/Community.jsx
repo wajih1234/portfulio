@@ -12,8 +12,9 @@ const Community = () => {
        <img  src={speak} />
        <div className='overlay'>
    <p>
-    I have participated in several problem-solving competitions 
-    to strengthen my critical thinking and analytical skills.
+    It's important to be responsible and take initiative, 
+    which is why I served as an Event Manager in ACM ENSTAB, 
+    where I gained valuable leadership and social skills.
    </p>
        </div>
 
@@ -22,9 +23,9 @@ const Community = () => {
     <img  src={cp}   />
     <div className='overlay'>
    <p>
-    It's important to be responsible and take initiative, 
-    which is why I served as an Event Manager in ACM ENSTAB, 
-    where I gained valuable leadership and social skills.
+    
+     I have participated in several problem-solving competitions 
+    to strengthen my critical thinking and analytical skills.
    </p>
 
       </div>
